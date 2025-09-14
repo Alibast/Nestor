@@ -1,0 +1,5 @@
+from io.json_loader import load_json
+
+if __name__ == "__main__":
+    data = load_json("test.json")  # nom de ton fichier test
+    print("Données chargées :", data)

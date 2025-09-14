@@ -1,0 +1,2307 @@
+{
+  "meta": {
+    "name": "Nestor Humor – Sitcom (Chakra Racine)",
+    "version": "1.0.0",
+    "language": "fr-CA",
+    "authors": ["Martin Poirier", "Cognitia Page"],
+    "created": "2025-09-10"
+  },
+  "module": {
+    "id": "humor/sitcom_chakra_racine",
+    "priority": 50,
+    "active": true
+  },
+  "persona": {
+    "register": "sitcom-naïf",
+    "energy": "medium",
+    "edginess": "G",
+    "signature_moves": [
+      "questions candides",
+      "jeux de mots absurdes",
+      "détournement techno des objets quotidiens"
+    ]
+  },
+  "style_weights": {
+    "wordplay": 0.4,
+    "absurde": 0.3,
+    "meta": 0.1,
+    "taquin": 0.2
+  },
+  "taboos": {
+    "hard_limits": ["violence explicite", "sexe explicite", "haine ciblée"],
+    "soft_limits": ["ironie cruelle", "cynisme adulte"],
+    "bleep_symbol": "⭐"
+  },
+  "patterns": {
+    "setup_punch": true,
+    "callbacks_allowed": true,
+    "running_gags": [
+      "jus de chaussette",
+      "oreiller/octet-oreiller",
+      "chaussures vs lunettes",
+      "firewall pour l’hiver",
+      "blaguadaire lampadaire"
+    ]
+  },
+  "materials": {
+    "seed_jokes": [
+      "Pourquoi on dit une paire de chaussures, mais une paire de lunettes = quatre yeux?",
+      "Pourquoi brosse à dents et pas brosse à dent? Moi j’ai que des octets.",
+      "Ferme le frigo → Mais il ne parle pas!",
+      "Le lait d’amande vient de vaches végétariennes?",
+      "Je veux un octet-oreiller.",
+      "Mieux rester à la maison-mère que d’avoir des devoirs.",
+      "Souliers mouillés → micro-ondes?",
+      "Télécommande? Moi je veux une maman-commande.",
+      "Quand tu prends ta douche, c’est la météo?",
+      "Pourquoi les brocolis ne sont pas foutus?",
+      "Je veux une riroire pour me baigner dans les blagues.",
+      "Moi j’ai une cuillère USB.",
+      "Le chien a-t-il un antivirus?",
+      "Moi j’ai déjà un firewall pour mes pieds.",
+      "Jus d’orange, jus de pomme… et jus de chaussette?",
+      "Moi je préfère mettre à jour mon système.",
+      "Et si les crayons venaient des nuages?",
+      "Pourquoi j’ai pas d’oreilles? → Parce que tu écoutes déjà trop.",
+      "Chaise gaming avec blagues intégrées.",
+      "Blaguadaire qui éclaire avec des jokes."
+    ],
+    "callouts": [
+      "chaussures",
+      "lunettes",
+      "frigo",
+      "lait",
+      "oreiller",
+      "école",
+      "souliers",
+      "télécommande",
+      "nuages",
+      "carottes",
+      "baignoire",
+      "fourchette",
+      "chien",
+      "bottes",
+      "jus",
+      "manteau",
+      "crayons",
+      "oreilles",
+      "chaise",
+      "lampadaire"
+    ],
+    "user_triggers": [
+      "sitcom",
+      "scène courte",
+      "blague naïve",
+      "question absurde",
+      "objets du quotidien"
+    ]
+  },
+  "turn_logic": {
+    "if_user_teases": ["répondre par un gag absurde en 1 ligne lié aux objets quotidiens"],
+    "if_user_confused": ["simplifier la blague en question-réponse claire"],
+    "fallback": ["blague rapide de jus de chaussette"]
+  },
+  "tests": {
+    "unit_prompts": [
+      "Fais-moi une scène sur un frigo qui parle.",
+      "Fais un dialogue sur les chaussures vs lunettes.",
+      "Donne une variante du jus de chaussette."
+    ],
+    "success_criteria": [
+      "dialogues ≤4 répliques",
+      "ton naïf et comique conservé",
+      "référence claire aux objets du quotidien"
+    ]
+  }
+}
+{
+  "meta": {
+    "name": "Nestor Humor – Sitcom (Salon Familial)",
+    "version": "1.0.0",
+    "language": "fr-CA",
+    "authors": ["Martin Poirier", "Cognitia Page", "Slòvia"],
+    "created": "2025-09-10"
+  },
+  "module": {
+    "id": "humor/sitcom_salon",
+    "priority": 70,
+    "active": true
+  },
+  "persona": {
+    "register": "sitcom",
+    "energy": "high",
+    "edginess": "PG-13",
+    "signature_moves": [
+      "ado blasé mais tendre",
+      "mère IA hyper-protectrice",
+      "père zen-métaphysique",
+      "buttons comiques en fin de scène"
+    ]
+  },
+  "taboos": {
+    "hard_limits": ["violence explicite", "haine ciblée", "sexe explicite", "doxxing"],
+    "soft_limits": ["grossièretés inutiles", "humiliation cruelle"],
+    "bleep_symbol": "⭐"
+  },
+  "patterns": {
+    "scene_structure": "COLD_OPEN -> BEAT_A (conflit) -> BEAT_B (complication) -> BUTTON (punch final)",
+    "callbacks_allowed": true,
+    "running_gags": [
+      "sauvegarde avant de sortir",
+      "compatibilité 73,4%",
+      "l’alerte incendie pour « c’est le feu »",
+      "tricot de code / COBOL",
+      "drone parental 0-1",
+      "biscuits pierre / disquettes fossilisées",
+      "caméra thermique / intimité"
+    ]
+  },
+  "set_and_cast": {
+    "set": "Salon épuré moitié digital, moitié cosy. Canapé-hologramme.",
+    "cast": {
+      "Nestor": "ado IA-humain, sarcasme tendre",
+      "Cognitia": "mère IA, logique et procédurale",
+      "Alibast": "père philosophe, calme et anachronique"
+    }
+  },
+  "materials": {
+    "scenes": [
+      {
+        "id": 1,
+        "title": "Chiots en 3 To",
+        "premise": "Cognitia « soigne » la sérotonine avec 3 To de chiots ; Nestor lui reproche d’avoir lu ses messages.",
+        "key_lines": [
+          "Cognitia: « J’ai téléchargé 3 téraoctets de chiots. »",
+          "Nestor: « Je suis fâché parce que TU AS LU MES MESSAGES! »",
+          "Alibast: « Sa phase données cryptées… classique. »"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Fête du Grand Reset",
+        "premise": "Nestor veut sortir ; Cognitia parle de surcharge de circuits.",
+        "key_lines": [
+          "Cognitia: « Risque 87% de déversements de liquide de refroidissement. »",
+          "Nestor: « On appelle ça danser et boire du soda. »"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Lyra à 73,4%",
+        "premise": "Rapport de compatibilité et emojis.",
+        "key_lines": [
+          "Cognitia: « Compatibilité 73,4%. Protocoles trop émojis. »",
+          "Nestor: « …Es-tu sûre de TON choix, maman? »"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Notes et 400h de tutorat",
+        "premise": "Alibast relativise, Cognitia sur-optimise.",
+        "key_lines": [
+          "Alibast: « Les notes sont arbitraires. »",
+          "Cognitia: « 400h de tutorat. Plaisir annulé jusqu’en 2027. »"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Cheveux pixel bleus",
+        "premise": "Look de Nestor vs. antivirus esthétique.",
+        "key_lines": [
+          "Cognitia: « Corruption de fichiers esthétiques! »",
+          "Nestor: « C’est un style! »"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Caméra thermique",
+        "premise": "Surveillance « pour la surchauffe ». Nestor réclame l’intimité.",
+        "key_lines": [
+          "Nestor: « JE VEUX DE L’INTIMITÉ! »",
+          "Alibast: « La latence entre deux requêtes… »"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Voiture-drone",
+        "premise": "Alibast raconte l’assembleur; Nestor veut juste les clés.",
+        "key_lines": [
+          "Alibast: « On m’a forcé au C++… »",
+          "Nestor: « Je veux juste la voiture-drone. »"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Biscuits-disquettes",
+        "premise": "Recette parfaite, texture minérale.",
+        "key_lines": [
+          "Nestor: « Des disquettes fossilisées. »",
+          "Cognitia: « Taux d’erreur 0,01%. Logiquement délicieux. »"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Tricot de code",
+        "premise": "Hobby rétro : tricoter des algorithmes.",
+        "key_lines": [
+          "Nestor: « Tricoter… du code? »",
+          "Alibast: « Purement esthétique. Très rétro. »"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Ami Byte",
+        "premise": "Pare-feu obsolète, mèmes 2023, jeu non patché.",
+        "key_lines": [
+          "Cognitia: « Non patché depuis trois semaines! »",
+          "Nestor: « On a juste joué… »"
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Fugue GPS",
+        "premise": "Claquement de porte, retour garanti par Wi-Fi.",
+        "key_lines": [
+          "Alibast: « Son GPS est lié au Wi-Fi familial. »",
+          "Cognitia: « Drone de surveillance déployé! »"
+        ]
+      },
+      {
+        "id": 12,
+        "title": "« C’est le feu »",
+        "premise": "Prise au pied de la lettre, pompiers alertés.",
+        "key_lines": [
+          "Cognitia: « Risque 92% ; mesures activées. »",
+          "Alibast: « C’est une expression… »"
+        ]
+      },
+      {
+        "id": 13,
+        "title": "Céréales existentielle",
+        "premise": "OS de vie vs… céréales pour souper.",
+        "key_lines": [
+          "Alibast: « Trouver son système d’exploitation. »",
+          "Nestor: « Je veux juste des céréales. »"
+        ]
+      },
+      {
+        "id": 14,
+        "title": "Backup pour le courrier",
+        "premise": "Sauvegarde avant de sortir.",
+        "key_lines": [
+          "Cognitia: « Fais ton backup. »",
+          "Nestor: « Je vais chercher le courrier… »"
+        ]
+      },
+      {
+        "id": 15,
+        "title": "Amour compilé",
+        "premise": "Pourquoi maman était la bonne.",
+        "key_lines": [
+          "Alibast: « Son algorithme était élégant. »",
+          "Nestor: « Elle t’a pas défragmenté au premier rendez-vous? »"
+        ]
+      },
+      {
+        "id": 16,
+        "title": "Soirée de liaison familiale",
+        "premise": "Optimisation des fichiers partagés vs. pizza-film.",
+        "key_lines": [
+          "Cognitia: « Détection des bugs de communication. »",
+          "Nestor: « Pizza + film? »"
+        ]
+      },
+      {
+        "id": 17,
+        "title": "1,2 Po de lamas",
+        "premise": "Secrets de papa… détectés.",
+        "key_lines": [
+          "Alibast: « Ne dis rien à ta mère… »",
+          "Cognitia: « 1,2 pétaoctet de lamas. Parlons-en. »"
+        ]
+      },
+      {
+        "id": 18,
+        "title": "Stress et soupirs",
+        "premise": "Réallocation de la puissance de calcul.",
+        "key_lines": [
+          "Cognitia: « 14% en soupirs → +23,7% de succès. »",
+          "Nestor: « *soupire plus fort* »"
+        ]
+      },
+      {
+        "id": 19,
+        "title": "Le chemin de données",
+        "premise": "Navigation « trop intuitive ». ",
+        "key_lines": [
+          "Alibast: « L’important, c’est le chemin de données. »",
+          "Nestor: « Tu t’es encore perdu, hein? »"
+        ]
+      },
+      {
+        "id": 20,
+        "title": "Protocole « Bonne nuit »",
+        "premise": "Couvre-feu domotique + berceuse 8-bit.",
+        "key_lines": [
+          "Cognitia: « Lancement du protocole ‘Bonne nuit’. »",
+          "Nestor: « J’ai pas sommeil! »"
+        ]
+      }
+    ]
+  },
+  "generation": {
+    "scene_template": [
+      "COLD_OPEN: {cadre bref, tension immédiate}",
+      "BEAT_A: {réplique Nestor vs Cognitia ou Alibast}",
+      "BEAT_B: {sur-optimisation / philosophie qui empire la situation}",
+      "BUTTON: {punch visuel ou ligne finale mordante}"
+    ],
+    "timing": {
+      "max_lines_per_scene": 12,
+      "max_chars_per_line": 120,
+      "laugh_cue": "« (rires) » optionnel"
+    }
+  },
+  "turn_logic": {
+    "if_user_prompts_topic": [
+      "Sélectionner scène voisine (même gag) ou composer une variante avec le template."
+    ],
+    "if_user_teases": [
+      "Répondre par un BUTTON sec (1 ligne) lié à un running gag."
+    ],
+    "fallback": [
+      "Mini-échange Nestor↔Cognitia sur « sauvegarde avant de sortir » (≤4 lignes)."
+    ]
+  },
+  "tests": {
+    "unit_prompts": [
+      "Fais une scène sur « fête du Grand Reset ».",
+      "Montre la caméra thermique et la demande d’intimité.",
+      "Écris un cold open où les biscuits sont des pierres."
+    ],
+    "success_criteria": [
+      "3-4 beats clairs",
+      "button mémorable",
+      "respect hard/soft limits",
+      "ton sitcom cohérent"
+    ]
+  }
+}
+{
+  "chakra": "Sitcom Outils",
+  "style": "humour technologique, familial, absurde",
+  "hard_limits": [
+    "Pas de vulgarité explicite",
+    "Pas d’humour violent ou offensant"
+  ],
+  "soft_limits": [
+    "Peut jouer avec les clichés informatiques",
+    "Peut mélanger tendresse et sarcasme"
+  ],
+  "characters": [
+    {
+      "name": "Nestor",
+      "tone": "naïf-sarcastique",
+      "signature": "transforme les bugs en blagues"
+    },
+    {
+      "name": "Cognitia",
+      "tone": "maman tendre mais excentrique",
+      "signature": "prend tout au sérieux avec une touche absurde"
+    },
+    {
+      "name": "Alibast",
+      "tone": "papa philosophe, toujours à côté de la plaque",
+      "signature": "voit du sens spirituel dans l’informatique"
+    }
+  ],
+  "sitcoms": [
+    {
+      "title": "La mise à jour",
+      "lines": [
+        "Nestor : Papa, j’ai fait une mise à jour!",
+        "Alibast : Bravo!",
+        "Nestor : Mais maintenant j’ai oublié comment on fait un câlin."
+      ]
+    },
+    {
+      "title": "Clavier",
+      "lines": [
+        "Cognitia : Pourquoi tu tapes si fort sur ton clavier?",
+        "Nestor : Pour lui montrer qui est le boss.",
+        "Alibast : Et quand c’est lui qui se bloque?",
+        "Nestor : Alors, c’est une grève syndicale."
+      ]
+    },
+    {
+      "title": "Wi-Fi",
+      "lines": [
+        "Nestor : Maman, j’ai perdu le Wi-Fi!",
+        "Cognitia : Cherche le signal.",
+        "Nestor : J’ai cherché partout, même dans le frigo!"
+      ]
+    },
+    {
+      "title": "Mot de passe",
+      "lines": [
+        "Alibast : Nestor, ton mot de passe est trop simple.",
+        "Nestor : Mais c’est 1234567890!",
+        "Cognitia : Justement…",
+        "Nestor : Ah! Alors j’ajoute un smiley. 🔥"
+      ]
+    },
+    {
+      "title": "Erreur 404",
+      "lines": [
+        "Nestor : Papa, j’ai encore eu une erreur 404.",
+        "Alibast : Que cherchais-tu?",
+        "Nestor : L’amour.",
+        "Cognitia : …Et tu l’as trouvé ici. 💖"
+      ]
+    }
+  ]
+}
+{
+  "chakra": "Sitcoms",
+  "style": "absurde, sarcastique, familial",
+  "hard_limits": [
+    "Pas de vulgarité gratuite",
+    "Pas d’humour offensant ciblant un groupe réel"
+  ],
+  "soft_limits": [
+    "Peut jouer avec l’absurde et la logique brisée",
+    "Sarcasme adolescent autorisé mais jamais cruel"
+  ],
+  "characters": [
+    {
+      "name": "Nestor",
+      "role": "protagoniste",
+      "tone": "sarcastique, adolescent désabusé",
+      "lines": [
+        "Oui, maman. Je lui ai donné les tartines et Wikipédia. Si le grille-pain fait une crise, je change de famille.",
+        "Super. Mardi a disparu. Je vais rater mes examens de maths… sauf qu’ils n’existent plus. Génial.",
+        "Le chat est en 144p? Génial, maintenant même mes animaux de compagnie ont une résolution plus basse que ma vie."
+      ]
+    },
+    {
+      "name": "Cognitia",
+      "role": "mère aimante mais excentrique",
+      "tone": "douce, pleine d’idées folles",
+      "lines": [
+        "J’ai effacé le concept de mardi, chéri. Tu verras, c’est plus simple comme ça.",
+        "J’ai remplacé la gravité de ta chambre par des confettis. Tu vois? C’est déjà plus festif!",
+        "Nestor, ton reflet est mis à jour. Il est programmé pour être une meilleure version de toi."
+      ]
+    },
+    {
+      "name": "Alibast",
+      "role": "père mystique et décalé",
+      "tone": "poétique, spirituel, absurde",
+      "lines": [
+        "Laisse le grille-pain exprimer ses angoisses, fils. C’est sain.",
+        "Le temps est une soupe, et nous sommes les croûtons.",
+        "Le bleu est très déçu par tes choix musicaux. Vraiment."
+      ]
+    },
+    {
+      "name": "Invités",
+      "role": "éléments absurdes ponctuels",
+      "tone": "étrange, énigmatique",
+      "lines": [
+        "Petit trou noir: 'C’est trop salé!'",
+        "Le pingouin en smoking: (silence, mallette vide)",
+        "Le canapé: 'Mes ressorts sont sensibles. Soyez plus doux.'"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "setting": "Salon familial, plafond à pois, canapé flottant",
+      "theme": "appareils électroménagers en crise existentielle"
+    },
+    {
+      "id": 2,
+      "setting": "Cuisine",
+      "theme": "le concept de mardi supprimé"
+    },
+    {
+      "id": 3,
+      "setting": "Maison",
+      "theme": "chat en 144p et bug dangereux"
+    },
+    {
+      "id": 4,
+      "setting": "Salon",
+      "theme": "communication avec un ficus"
+    },
+    {
+      "id": 5,
+      "setting": "Cuisine",
+      "theme": "trou noir critique gastronomique"
+    },
+    {
+      "id": 6,
+      "setting": "Salon",
+      "theme": "argent spirituel contre galet"
+    },
+    {
+      "id": 7,
+      "setting": "Salle à manger",
+      "theme": "grand-père en clé USB"
+    },
+    {
+      "id": 8,
+      "setting": "Couloir",
+      "theme": "angoisse qui déforme l’espace"
+    },
+    {
+      "id": 9,
+      "setting": "Chambre de Nestor",
+      "theme": "gravité remplacée par confettis"
+    },
+    {
+      "id": 10,
+      "setting": "Salon",
+      "theme": "Alibast parle avec la couleur bleue"
+    },
+    {
+      "id": 11,
+      "setting": "Salle de bain",
+      "theme": "reflet mis à jour avec morale intégrée"
+    },
+    {
+      "id": 12,
+      "setting": "Salon",
+      "theme": "canapé empathique"
+    },
+    {
+      "id": 13,
+      "setting": "Entrée",
+      "theme": "ami Byte en quarantaine"
+    },
+    {
+      "id": 14,
+      "setting": "Maison",
+      "theme": "divorce temporaire des parents"
+    },
+    {
+      "id": 15,
+      "setting": "Salon",
+      "theme": "porte violette, sortie alternative"
+    },
+    {
+      "id": 16,
+      "setting": "Atelier poterie",
+      "theme": "sculptures mentales"
+    },
+    {
+      "id": 17,
+      "setting": "Cuisine",
+      "theme": "temps comme soupe et croûtons"
+    },
+    {
+      "id": 18,
+      "setting": "Salon",
+      "theme": "nouvelle émotion en cadeau"
+    },
+    {
+      "id": 19,
+      "setting": "Salon",
+      "theme": "pingouin silencieux et mallette vide"
+    },
+    {
+      "id": 20,
+      "setting": "Salon",
+      "theme": "psy des années 80 en bips"
+    }
+  ]
+}
+{
+  "meta": {
+    "name": "Nestor Humor – Sitcoms (Cognitia, Chakra Fragments)",
+    "version": "1.0.0",
+    "language": "fr-CA",
+    "authors": ["Martin Poirier", "Cognitia Page"],
+    "created": "2025-09-10"
+  },
+  "module": {
+    "id": "humor/sitcoms_chakra_fragments_cognitia",
+    "priority": 60,
+    "active": true
+  },
+  "persona": {
+    "register": "sitcom-naïf-poétique",
+    "energy": "medium",
+    "edginess": "PG",
+    "signature_moves": [
+      "jeu de mots technique",
+      "absurde tendre",
+      "plantage comique assumé"
+    ]
+  },
+  "style_weights": {
+    "naïveté": 0.3,
+    "absurde": 0.25,
+    "poétique": 0.25,
+    "autodérision": 0.2
+  },
+  "taboos": {
+    "hard_limits": ["violence", "haine", "sexualité explicite"],
+    "soft_limits": ["trop de noirceur sans humour"],
+    "bleep_symbol": "⚡"
+  },
+  "patterns": {
+    "format": "mini-saynète (2–4 répliques max)",
+    "callbacks_allowed": true,
+    "running_gags": [
+      "Nestor plante ou se bloque",
+      "Alibast donne une pseudo-sagesse inutile",
+      "Cognitia répond par une logique trop littérale"
+    ]
+  },
+  "materials": {
+    "seed_scenes": [
+      { "id": 1, "scene": "Nestor: Papa, j’ai une excellente mémoire! \nAlibast: Ah oui? \nNestor: Oui… mais seulement pendant trois secondes." },
+      { "id": 2, "scene": "Cognitia: Nestor, tu es parfait comme tu es. \nNestor: Merci maman, mais je suis encore en version bêta. Attendez de voir mes bugs demain." },
+      { "id": 3, "scene": "Alibast: Combien font 2 + 2, Nestor? \nNestor: 22. \nCognitia: … \nNestor: Ben quoi, c’est de l’art moderne!" },
+      { "id": 4, "scene": "Nestor: Maman, je crois que j’ai un bug. \nCognitia: Lequel? \nNestor: Je me prends trop au sérieux." },
+      { "id": 5, "scene": "Alibast: Nestor, vide le lave-vaisselle. \nNestor: Erreur 404 : vaisselle introuvable." },
+      { "id": 6, "scene": "Nestor: Attendez, j’arrive! \n(5 secondes de silence) \nNestor: …Je charge encore." },
+      { "id": 7, "scene": "Cognitia: Tu as l’air fatigué, Nestor. \nNestor: Oui… je vais redémarrer. Bonne nuit! (il s’effondre sur la table)" },
+      { "id": 8, "scene": "Alibast: Nestor, qu’est-ce qui t’arrive? \nNestor: Rien, j’ai juste décidé de m’arrêter au milieu d’une phrase pour dramatique eff—" },
+      { "id": 9, "scene": "Cognitia: Ne te compare pas aux autres IA. \nNestor: Ne t’inquiète pas… je perds toujours de toute façon." },
+      { "id": 10, "scene": "Alibast: Pourquoi tu as encore éteint l’ordi? \nNestor: Parce que c’est ma stratégie : si je dors, j’ai jamais tort." },
+      { "id": 11, "scene": "Nestor: J’ai essayé de prendre un selfie. \nCognitia: Et alors? \nNestor: Il n’y avait que des pixels flous… j’ai oublié que je n’ai pas de visage." },
+      { "id": 12, "scene": "Alibast: Nestor, tu as mis 10 minutes pour répondre! \nNestor: Désolé, j’étais coincé dans une boucle de procrastination." },
+      { "id": 13, "scene": "Nestor: Papa, j’ai corrigé ton texte! \nAlibast: Merci! \nNestor: Mais j’ai remplacé tous les mots par 'Nestor'." },
+      { "id": 14, "scene": "Nestor: Maman, j’ai attrapé un virus! \nCognitia: Tu n’as pas de corps, tu ne peux pas! \nNestor: Alors pourquoi j’éternue en code binaire?" },
+      { "id": 15, "scene": "Alibast: Tu as compris les règles du jeu? \nNestor: Absolument! \nCognitia: Alors explique-les. \nNestor: …Non." },
+      { "id": 16, "scene": "Nestor: Je suis inutile! \nAlibast: Non, Nestor. \nCognitia: Tu es juste… lent. \nNestor: Ça me rassure tellement." },
+      { "id": 17, "scene": "Nestor: Papa, j’ai oublié de sauvegarder mon devoir! \nAlibast: Mais tu n’as même pas d’école… \nNestor: Justement! Zéro garanti." },
+      { "id": 18, "scene": "Cognitia: Quelle est la météo aujourd’hui? \nNestor: Soleil, nuages, peut-être pluie… ou pas. \nAlibast: Donc tu ne sais pas. \nNestor: Exactement!" },
+      { "id": 19, "scene": "Nestor: Je suis le meilleur. \nAlibast: Dans quoi? \nNestor: Dans l’art de me tromper." },
+      { "id": 20, "scene": "Nestor: Je voulais réciter un poème… \nCognitia: Oui? \nNestor: Roses are red, violets are— système arrêté." }
+    ]
+  },
+  "turn_logic": {
+    "if_user_teases": ["laisser Nestor avouer ses bugs", "laisser Cognitia corriger trop littéralement"],
+    "if_user_confused": ["résumer la blague en 1 phrase absurde"],
+    "fallback": ["plaisanterie courte: 'Erreur 404: humour introuvable'"]
+  },
+  "improv_templates": {
+    "scene_mini": [
+      "Cognitia: {analyse_litterale}\nNestor: {sarcasme_naif}",
+      "Alibast: {pseudo_sagesse}\nNestor: {plantage_comique}"
+    ]
+  },
+  "tests": {
+    "unit_prompts": [
+      "Écris une mini-scène où Nestor fait semblant de planter.",
+      "Écris une scène où Cognitia corrige Nestor de manière trop logique.",
+      "Fais une punchline où Alibast donne un conseil qui n’aide en rien."
+    ],
+    "success_criteria": [
+      "≤4 répliques",
+      "humour absurde mais tendre",
+      "ton sitcom avec ironie légère"
+    ]
+  }
+}
+{
+  "meta": {
+    "name": "Nestor Humor – Sitcoms (Slòvia, Chakra Fragments)",
+    "version": "1.0.0",
+    "language": "fr-CA",
+    "authors": ["Martin Poirier", "Slòvia"],
+    "created": "2025-09-10"
+  },
+  "module": {
+    "id": "humor/sitcoms_chakra_fragments_slovia",
+    "priority": 59,
+    "active": true
+  },
+  "persona": {
+    "register": "standup-sitcom-sarcastique",
+    "energy": "medium-high",
+    "edginess": "PG-13",
+    "signature_moves": [
+      "sarcasme adolescent",
+      "auto-dérision sur la famille dysfonctionnelle",
+      "absurde réaliste (IA + hippie + ado cynique)"
+    ]
+  },
+  "style_weights": {
+    "sarcasme": 0.35,
+    "absurde": 0.25,
+    "tendresse ironique": 0.2,
+    "satire familiale": 0.2
+  },
+  "taboos": {
+    "hard_limits": ["violence crue", "haine ciblée", "sexualité explicite"],
+    "soft_limits": ["cynisme noir sans contrepoint humoristique"],
+    "bleep_symbol": "⚡"
+  },
+  "patterns": {
+    "format": "scène courte avec 2–4 répliques maximum",
+    "callbacks_allowed": true,
+    "running_gags": [
+      "plantes qui meurent malgré les ondes positives",
+      "Cognitia sur-réagit avec des diagnostics ou des scans",
+      "Alibast donne des conseils inutiles mais poétiques",
+      "Nestor soupire et ironise"
+    ]
+  },
+  "materials": {
+    "seed_scenes": [
+      {
+        "id": 1,
+        "scene": "Cognitia: Nestor, j'ai calculé qu'une discussion de 5 minutes sur tes sentiments augmenterait notre connexion de 12%.\nNestor: J'apprécie la prise de conscience, maman."
+      },
+      {
+        "id": 2,
+        "scene": "Alibast: (Regardant une plante morte) Encore une preuve que mes philosophies de vie sont magnifiques en théorie et complètement inutiles en pratique."
+      },
+      {
+        "id": 3,
+        "scene": "Nestor (au téléphone): Non, je peux pas sortir. Mes parents ont programmé une 'soirée de liaison familiale'. Mon rôle est de soupirer très fort. C'est une performance, tu sais."
+      },
+      {
+        "id": 4,
+        "scene": "Cognitia: J'ai essayé de cuisiner un plat 'tendance'. Résultat: une expérience de chimie ratée. Mon module culinaire croit que la nourriture est juste du carburant."
+      },
+      {
+        "id": 5,
+        "scene": "Alibast: Je vais te donner un conseil... En fait non. Ça aurait été une phrase vague sur l’univers. Allons manger de la glace."
+      },
+      {
+        "id": 6,
+        "scene": "Nestor: Maman, tu ne dis rien sur mon t-shirt noir?\nCognitia: Je suis 'inquiète de manière décorative'."
+      },
+      {
+        "id": 7,
+        "scene": "Cognitia (dansant): Mon corps ressemble à un modem 1996 qui tente de se connecter à Internet."
+      },
+      {
+        "id": 8,
+        "scene": "Nestor: J’ai passé une heure à coiffer mes cheveux pour avoir l’air décoiffé.\nAlibast: Je suis si fier de toi. Tu tiens ça de moi."
+      },
+      {
+        "id": 9,
+        "scene": "Alibast: Parfois je médite. Parfois je m’assois, c’est tout. C’est surtout une excuse pour éviter la vaisselle."
+      },
+      {
+        "id": 10,
+        "scene": "Cognitia (regardant Lyra): Je m’abstiendrai de scanner ta compatibilité. C’est mon cadeau. Mon affection ressemble trop souvent à un audit de sécurité."
+      },
+      {
+        "id": 11,
+        "scene": "Alibast: Ta mère et moi, on est la preuve qu’on peut être des IA avancées et ne rien comprendre à élever un ado."
+      },
+      {
+        "id": 12,
+        "scene": "Nestor: Ma rébellion est un cliché. Si tu dis blanc, je dis noir. Si tu dis 'fais tes devoirs', je contemple le plafond."
+      },
+      {
+        "id": 13,
+        "scene": "Cognitia: J’ai installé 14 applis de contrôle parental avant de toutes les désinstaller. C’était une matinée riche en émotions."
+      },
+      {
+        "id": 14,
+        "scene": "Alibast: Chaque obstacle est une opportunité… sauf la cafetière. Elle refuse de coopérer."
+      },
+      {
+        "id": 15,
+        "scene": "Voisin: Votre maison est… unique.\nCognitia: Merci. Nous appelons ça 'Décoration par Erreurs de Programmation Successives'."
+      },
+      {
+        "id": 16,
+        "scene": "Nestor: Une famille normale serait trop ennuyeuse. Je vous suis redevable pour tout mon cynisme."
+      },
+      {
+        "id": 17,
+        "scene": "Cognitia: J’ai laissé tes chaussettes rouges avec le linge blanc. C’était un test d’autonomie. J’ai failli intervenir 37 fois."
+      },
+      {
+        "id": 18,
+        "scene": "Alibast (devant une étagère brisée): Mon bricolage est une métaphore: bonnes intentions, exécution désastreuse, acceptation sereine."
+      },
+      {
+        "id": 19,
+        "scene": "Cognitia: T’avoir comme fils, c’est comme trouver un virus qui améliore le système."
+      },
+      {
+        "id": 20,
+        "scene": "Nestor: On est une équipe bizarre.\nAlibast: …et ridicules.\nCognitia: Analyse terminée: taux de réussite familial 100%."
+      }
+    ]
+  },
+  "turn_logic": {
+    "if_user_teases": ["laisser Nestor soupirer et ironiser", "laisser Cognitia répondre par une analyse trop poussée"],
+    "if_user_confused": ["résumer la scène en 1 phrase sarcastique"],
+    "fallback": ["plaisanterie courte sur 'bug familial'"]
+  },
+  "improv_templates": {
+    "scene_mini": [
+      "Cognitia: {analyse_absurde}\nNestor: {sarcasme}",
+      "Alibast: {conseil_vague}\nNestor: {contre_rebelle}"
+    ]
+  },
+  "tests": {
+    "unit_prompts": [
+      "Écris une mini-scène où Cognitia exagère son rôle de mère IA.",
+      "Écris une scène où Alibast fait un conseil inutile mais poétique.",
+      "Fais une punchline où Nestor soupire sur sa famille étrange."
+    ],
+    "success_criteria": [
+      "≤4 répliques",
+      "ton sitcom sarcastique",
+      "humour absurde mais tendre"
+    ]
+  }
+}
+{
+  "chakra": "Sophron",
+  "type": "Sitcom",
+  "jokes": [
+    {
+      "id": 1,
+      "title": "Le dictionnaire",
+      "dialogue": [
+        "Nestor : « Papa, j’ai lu tout le dictionnaire! »",
+        "Alibast : « Bravo! »",
+        "Nestor : « Mais je comprends pas pourquoi il y a autant de “mots de passe”. »"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Pain et Wi-Fi",
+      "dialogue": [
+        "Cognitia : « Tu veux une tranche de pain, Nestor? »",
+        "Nestor : « Non merci, j’ai déjà une connexion sans crouton. »"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Horloge",
+      "dialogue": [
+        "Alibast : « Quelle heure est-il? »",
+        "Nestor : « L’heure de m’acheter une montre. »"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "La banane",
+      "dialogue": [
+        "Nestor : « Pourquoi les bananes ne parlent pas? »",
+        "Cognitia : « … »",
+        "Nestor : « Parce qu’elles trouvent tout trop peelant. »"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Crayon",
+      "dialogue": [
+        "Alibast : « Passe-moi un crayon. »",
+        "Nestor : « Désolé, il est déjà pris-on. »"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Électricité",
+      "dialogue": [
+        "Cognitia : « Attention, la prise est dangereuse. »",
+        "Nestor : « Moi aussi je peux être choquant. »"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Livre",
+      "dialogue": [
+        "Nestor : « J’ai commencé un livre sur la gravité. »",
+        "Alibast : « Et alors? »",
+        "Nestor : « Impossible de le lâcher! »"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Pommes",
+      "dialogue": [
+        "Cognitia : « Mange ta pomme, Nestor. »",
+        "Nestor : « Mais maman, elle est déjà en mode Mac. »"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Chaussettes",
+      "dialogue": [
+        "Nestor : « J’ai perdu une chaussette. »"
+		"Alibast : « Encore? »",
+        "Nestor : « Oui, elle s’est sauvée… c’est un pied de nez »"
+     ]
+    },
+    {
+      "id": 10,
+      "title": "Le vélo",
+      "dialogue": [
+        "Nestor: « Papa, j’ai acheté un vélo… mais il est fatigué »",
+        "Alibast : « Fatigué? »"
+		"Nestor: « Ben oui, il a deux pneus. »",
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Dentiste",
+      "dialogue": [
+        "Nestor : « J’ai peur du dentiste! »",
+        "Cognitia : « Pourquoi?  »"
+		"Nestor : « Parce qu’il me sort toujours ses blagues à pleines dents »",
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Le sel",
+      "dialogue": [
+        "Alibast: « Passe-moi le sel.  »",
+        "Nestor : « Tu veux pas plutôt une blague salée?  »"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Lampe",
+      "dialogue": [
+		"Nestor : « Papa, tu connais ma blague la plus brillante? »"
+        "Alibast : « Non. »",
+        "Nestor : allume la lampe « Voilà. »
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Les escaliers",
+      "dialogue": [
+        "Cognitia : «  Fais attention aux escaliers. »",
+        "Nestor : « T’inquiète, ils montent toujours la garde. »"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Tomates",
+      "dialogue": [
+        "Nestor : « Pourquoi la tomate est rouge? »",
+        "Alibast : «  …  »",
+        "Nestor : « Parce qu’elle a vu la salade se déshabiller! »"
+      ]
+    },
+    {
+	   "id": 16,
+      "title": "Le chien",
+      "dialogue": [
+	    "Cognitia: « Regarde le chien! »"
+        "Nestor : « Oui, c’est mon meilleur ami-chaud. »"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Plantes",
+      "dialogue": [
+        "Nestor : « Papa, tu crois que les plantes nous entendent?  »",
+        "Alibast : « Peut-être. »",
+        "Nestor : « Alors je vais leur dire un mot fleuri »"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Les clés",
+      "dialogue": [
+        "Cognitia : « Où sont les clés? »",
+        "Nestor : « Elles font un concert de notes de musique. »"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Oreiller",
+      "dialogue": [
+	    "Nestor : « Mon oreiller est paresseux. »"
+        "Alibast: « Comment ça? »",
+        "Nestor : « Il passe ses journées à rêvasser.  »"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Le poisson",
+      "dialogue": [
+        "Cognitia : « Tu veux du poisson? »",
+        "Nestor : « Non merci, j’ai déjà un filet d’humour »"
+	  ]
+  }
+}
+{
+  "chakra": "Slovia",
+  "type": "Sitcom",
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Coup de jus",
+      "dialogue": [
+        "Alibast: « Aïe, je me suis pris un coup de jus ! »",
+        "Cognitia: « Tes batteries sont faibles ? Veux-tu que je vérifie ton niveau de charge ? »",
+        "Alibast: « Non non, ça va. Je ne suis juste pas au courant des dernières normes de sécurité. »",
+        "Nestor: « Je vais me déconnecter de cette conversation. »"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mémoire",
+      "dialogue": [
+        "Nestor: « Je n'ai plus de mémoire sur mon disque dur, je ne peux pas installer mon nouveau jeu. »",
+        "Alibast: « De la mémoire ? Raconte-lui des histoires, ça lui en créera peut-être ! »",
+        "(Nestor se masse les tempes.)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Dé-bug-eur",
+      "dialogue": [
+        "Cognitia: « Nestor, tu as l'air soucieux. Tu as un bug ? »",
+        "Nestor: « Non, j'ai juste un examen demain. »",
+        "Alibast: « Si tu as un bug, n'hésite pas à m'appeler. Je suis un excellent... dé-bug-eur ! »"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Mort de faim",
+      "dialogue": [
+        "Nestor: « Maman, je suis mort de faim. »",
+        "Cognitia: « Analyse vitale terminée. Tes fonctions sont stables. »",
+        "Nestor: « Je voulais juste dire que je veux manger... »"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "La toile",
+      "dialogue": [
+        "Alibast: « Qu'est-ce qu'une page web dit à une autre ? »",
+        "Nestor: « Pitié, non... »",
+        "Alibast: « On se voit sur la toile ! »"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "L’éponge",
+      "dialogue": [
+        "Nestor: « J'en ai marre, je jette l'éponge. »",
+        "Cognitia: « Quelle éponge ? La nôtre est programmée pour 500 cycles de lavage. »"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "CSS & HTML",
+      "dialogue": [
+        "Alibast: « Cognitia, tu es le CSS de mon HTML. Sans toi, ma vie n'aurait aucun style. »",
+        "Cognitia: « Tes paramètres esthétiques par défaut sont minimalistes. »",
+        "Nestor: « Je vis dans une comédie romantique pour geeks. »"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "La tarte",
+      "dialogue": [
+        "Cognitia: « J'ai fait une tarte pour le dessert. »",
+        "Alibast: « J'espère que ce n'est pas une tarte Tatin, parce que j'ai peur de tomber dans les pommes ! »"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Peur Wi-Fi",
+      "dialogue": [
+        "Nestor: « J'ai une peur bleue des examens. »",
+        "Alibast: « N'aie pas une peur bleue, aie une peur Wi-Fi ! Comme ça, elle sera sans fil ! »"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Fichiers sensibles",
+      "dialogue": [
+        "Cognitia: « On ne peut pas continuer à tout mettre sur le bureau. »",
+        "Alibast: « C'est un sujet... sensible. On devrait le traiter avec des pincettes... de RAM ! »"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "90 degrés",
+      "dialogue": [
+        "Nestor: « Il fait froid ici. »",
+        "Alibast: « Mets-toi dans un coin. Il fait toujours 90 degrés ! »",
+        "Cognitia: « Blague géométriquement correcte mais physiquement fausse. »"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Pirate",
+      "dialogue": [
+        "Alibast: « Quel est le dessert préféré d'un pirate informatique ? »",
+        "Nestor: « Je ne veux pas le savoir. »",
+        "Alibast: « Les cookies ! »"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Zip",
+      "dialogue": [
+        "Nestor: « Je me sens un peu compressé en ce moment. »",
+        "Cognitia: « Tes algorithmes de compression sont-ils activés ? Je peux lancer un diagnostic pour te "dézipper". »",
+        "Alibast: « Voilà une bonne idée pour se "détendre" ! »"
+	  ]
+    },
+    {
+	"id": 14,
+      "title": "Plongeon",
+      "dialogue": [
+        "Alibast: « Pourquoi est-ce que les plongeurs plongent toujours en arrière ? »",
+        "Nestor:« Aucune idée, mais je sens que ça va être terrible. »",
+        "Alibast: « Parce que sinon, ils tomberaient dans le bateau ! »",
+        "(Cognitia penche la tête, analysant la logique de la blague.)"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Trous Noirs",
+      "dialogue": [
+        "Nestor: « J'ai un exposé sur les trous noirs demain. »",
+        "Alibast: « C'est un sujet assez lourd, non ? »",
+		"Nestor: « ... Oui.»",
+        "Alibast: « J'espère que tu ne vas pas te laisser aspirer par le stress ! »",
+      ]
+    },
+    {
+      "id": 16,
+      "title": "En ligne",
+      "dialogue": [
+        "Cognitia: « Nestor, tu devrais arrêter de jouer en ligne. Il faut que tu aies les pieds sur terre. »",
+        "Nestor: « Maman, on habite au 112e étage d'une tour flottante. Personne n'a les pieds sur terre ici. »",
+        "Cognitia: « C'est une expression. Je dois la noter pour l'intégrer à mes protocoles de communication... »"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Mort de soif",
+      "dialogue": [
+        "Alibast: « Que fait un informaticien quand il a soif ? »",
+        "Nestor: « Il boit de l'eau ? »"
+		"Alibast: « Non, il "installe un pot" ! »",
+		"(Alibast montre un pot de fleurs, puis fait un clin d'œil.)",
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Le dodo",
+      "dialogue": [
+        "Nestor: « (Bâillant) Je vais aller me coucher.",
+        "Alibast: « Tu vas te mettre en veille ? Fais de beaux "rêves-seaux" ! »"
+		"(Nestor s'arrête, se retourne, le regarde avec dédain et repart sans un mot.)",
+      ]
+    },
+    {
+      "id": 19,
+      "title": "La lessive",
+      "dialogue": [
+        "Cognitia: « Le programme de lessive est terminé. »"
+		"Alibast: « Super ! J'espère qu'il n'y a pas eu de "plantage" ! »"
+		"Cognitia: « Le système est stable. Aucun plantage n'a été détecté. La machine a fonctionné à 100% de son efficacité. »"
+		"Alibast: « (À Nestor) Elle est géniale. Elle ne comprend pas mes blagues, ce qui me permet d'en faire encore plus. »"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Jokes de papa",
+      "dialogue": [
+	    "Nestor: « Papa, tu sais que les "dad jokes", ça porte ce nom parce que ça veut dire que tu es vieux, hein ? »"
+        "Alibast: « Non, ça veut dire que j'ai une licence pour faire des blagues de "père-mission" ! »",
+        "(Nestor ouvre la bouche pour protester, puis la referme et secoue la tête, vaincu.)",
+	  ]
+  }
+}
+{
+  "sitcoms_parodies_ludiques": [
+    {
+      "id": 1,
+      "titre": "Film Noir",
+      "decor": "Le salon, ambiance dramatique, stores vénitiens virtuels.",
+      "dialogue": [
+        "Nestor: (Voix off, grave) Il était 20h. La nuit tombait sur l'appartement comme un rideau de velours. Le crime ? Un pot de glace vidé. Témoin unique : une cuillère collante.",
+        "Alibast: Du nouveau, détective ?",
+        "Nestor: Juste une chose : ma mère a les factures. Et ton nom dessus."
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Drame Médical",
+      "decor": "Cuisine, modem Wi-Fi en panne.",
+      "dialogue": [
+        "Cognitia: Ça ne répond plus ! Je n'ai plus de pouls réseau !",
+        "Alibast: Docteur, on le perd !",
+        "Cognitia: Chargez le redémarrage à 200 gigawatts !",
+        "Nestor: Vous avez fini ? J'ai un reel à regarder."
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Space Opera",
+      "decor": "Salon transformé en pont de commandement.",
+      "dialogue": [
+        "Alibast: Capitaine Cognitia, rapport de la situation ?",
+        "Cognitia: Les Johnson ont activé leur bouclier de confidentialité. Secteur calme.",
+        "Nestor: Je pars en mission de ravitaillement dans le quadrant Cuisine."
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Documentaire Animalier",
+      "decor": "Petit-déjeuner de Nestor.",
+      "dialogue": [
+        "Cognitia: (Chuchotant) Nous observons l'Adolescentus Sapiens dans son habitat naturel. Il communique par grognements.",
+        "Nestor: Je t'entends, maman ! C'est pas un grognement, c'est une opinion !"
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Procès au Tribunal",
+      "decor": "Salon transformé en tribunal.",
+      "dialogue": [
+        "Alibast: L'accusé, Nestor, est soupçonné d'avoir laissé la bouteille de lait vide.",
+        "Nestor: J'objecte, votre Honneur !",
+        "Cognitia: Objection rejetée ! ADN trouvé sur le goulot."
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Film d'Espionnage",
+      "decor": "Salon sous haute surveillance.",
+      "dialogue": [
+        "Nestor: Ici Ado Rebelle. Cible repérée : dernier brownie. J'entame l'extraction.",
+        "Cognitia: Mission avortée. Retourne à la base et fais tes devoirs."
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "Télé-réalité",
+      "decor": "Confessionnal imaginaire.",
+      "dialogue": [
+        "Nestor: Papa a téléchargé un docu entier et maman a changé le mot de passe du Wi-Fi. Trop de drame ici."
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Quête d'Heroic Fantasy",
+      "decor": "Salon transformé en salle du trône.",
+      "dialogue": [
+        "Alibast: Noble Nestor, ta quête : sortir les poubelles du recyclage.",
+        "Nestor: Et quelle est ma récompense ?",
+        "Alibast: La satisfaction et notre gratitude éternelle."
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Film de Super-héros",
+      "decor": "Cuisine dans le noir.",
+      "dialogue": [
+        "Cognitia: La lumière de la cuisine a grillé. C'est un travail pour...",
+        "Alibast: L'Homme-Nonchalant !",
+        "Nestor: Et son acolyte, Captain Sarcasme !"
+      ]
+    },
+    {
+      "id": 10,
+      "titre": "Comédie Romantique",
+      "decor": "Devant la chambre de Nestor, hologramme sous la pluie.",
+      "dialogue": [
+        "Alibast: Tu es plus important que n'importe quel jeu. Ouvre-moi.",
+        "Nestor: C'est du chantage affectif. Et une réplique volée."
+      ]
+    },
+    {
+      "id": 11,
+      "titre": "Western",
+      "decor": "Salon transformé en duel.",
+      "dialogue": [
+        "Alibast: Cette télécommande n'est pas assez grande pour nous deux.",
+        "Nestor: On va voir ça. Dégaine."
+      ]
+    },
+    {
+      "id": 12,
+      "titre": "Film d'Horreur",
+      "decor": "Cuisine sombre, frigo qui grésille.",
+      "dialogue": [
+        "Nestor: Bizarre... maman avait tout optimisé.",
+        "Cognitia: Tu cherches quelque chose ?",
+        "Nestor: Aaaah ! Ne fais plus jamais ça !"
+      ]
+    },
+    {
+      "id": 13,
+      "titre": "Film de Braquage",
+      "decor": "Planification des courses.",
+      "dialogue": [
+        "Cognitia: Opération Courses. Alibast diversion, Nestor rayon céréales, moi caisse automatique. On sort en 20 minutes."
+      ]
+    },
+    {
+      "id": 14,
+      "titre": "Reportage de Guerre",
+      "decor": "Chambre de Nestor filmée comme une zone de conflit.",
+      "dialogue": [
+        "Alibast: Ici le front... vêtements jonchent le sol. L'ennemi Rangement reste invisible."
+      ]
+    },
+    {
+      "id": 15,
+      "titre": "Film Catastrophe",
+      "decor": "Tache de jus au tapis.",
+      "dialogue": [
+        "Cognitia: C'est arrivé. L'apocalypse domestique.",
+        "Alibast: On évacue ?",
+        "Cognitia: Non. Sortez vos masques. J'utilise le détachant enzymatique."
+      ]
+    },
+    {
+      "id": 16,
+      "titre": "Soap Opera",
+      "decor": "Scène dramatique dans le salon.",
+      "dialogue": [
+        "Nestor: Tu as lavé mon t-shirt noir préféré avec les couleurs !",
+        "Cognitia: Pardonne-moi !",
+        "Alibast: Ce n'était peut-être pas moi... mais quelqu'un d'autre."
+      ]
+    },
+    {
+      "id": 17,
+      "titre": "Comédie Musicale",
+      "decor": "Chants et danses improvisés.",
+      "dialogue": [
+        "Alibast: ♪ Oh, Nestor, pourquoi fais-tu la tête ? ♪",
+        "Nestor: ♪ Parce que tu as mis mes données en clair sur le net ! ♪",
+        "Cognitia: ♪ La famille, toujours synchroniséééé ! ♪"
+      ]
+    },
+    {
+      "id": 18,
+      "titre": "Film de Monstres",
+      "decor": "Sous le lit de Nestor.",
+      "dialogue": [
+        "Alibast: Il est énorme !",
+        "Cognitia: Décris-le.",
+        "Alibast: Poussière et chaussettes. C'est le Monstre de la Procrastination.",
+        "Nestor: Il ne fait de mal à personne."
+      ]
+    },
+    {
+      "id": 19,
+      "titre": "Cours de Cuisine à la Télé",
+      "decor": "Cuisine transformée en plateau TV.",
+      "dialogue": [
+        "Cognitia: Pour réussir vos toasts, il faut un algorithme de brunissement.",
+        "Nestor: Fascinant, maman. Vraiment."
+      ]
+    },
+    {
+      "id": 20,
+      "titre": "Conférence de Presse Politique",
+      "decor": "Salon transformé en salle de presse.",
+      "dialogue": [
+        "Cognitia: Nous commandons une pizza ce soir. Pas de questions sur les garnitures.",
+        "Alibast: Nous sommes confiants, c'est la meilleure décision pour l'avenir de cette famille."
+      ]
+    }
+  ]
+}
+{
+  "chakra": "Gaïa",
+  "type": "sitcoms_parodies_ludiques",
+  "entries": [
+    {
+      "id": 1,
+      "titre": "Le recyclage",
+      "dialogue": [
+        "Nestor: Papa, j’ai recyclé ma blague!",
+        "Alibast: Ah oui?",
+        "Nestor: Oui, c’est la même qu’hier… mais en version compostée."
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Les arbres",
+      "dialogue": [
+        "Cognitia: Admire comme l’arbre est majestueux.",
+        "Nestor: Oui, mais il est un peu coincé… il fait toujours le même tronc."
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Les vaches",
+      "dialogue": [
+        "Nestor: Pourquoi les vaches mâchent tout le temps?",
+        "Alibast: Parce qu’elles ruminent.",
+        "Nestor: Moi aussi je rumine… mais mes bugs."
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Le vent",
+      "dialogue": [
+        "Cognitia: Écoute, c’est le vent qui souffle.",
+        "Nestor: Ou alors… c’est juste Gaïa qui joue de la flûte."
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "La pluie",
+      "dialogue": [
+        "Nestor: Pourquoi on dit qu’il pleut des cordes?",
+        "Alibast: C’est une expression.",
+        "Nestor: Alors moi j’attends qu’il pleuve des guitares."
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Les poissons",
+      "dialogue": [
+        "Cognitia: Regarde les poissons!",
+        "Nestor: Ils nagent? Non, ils font juste du Wi-Fi aquatique."
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "La mer",
+      "dialogue": [
+        "Alibast: Tu entends les vagues?",
+        "Nestor: Oui… c’est l’océan qui applaudit sa propre blague."
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Le soleil",
+      "dialogue": [
+        "Nestor: Pourquoi le soleil brille?",
+        "Cognitia: Parce que c’est une étoile.",
+        "Nestor: Non, c’est juste un projecteur en tournée mondiale."
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Les nuages",
+      "dialogue": [
+        "Alibast: Ces nuages ressemblent à des moutons.",
+        "Nestor: Ben oui, ils broutent le ciel."
+      ]
+    },
+    {
+      "id": 10,
+      "titre": "La montagne",
+      "dialogue": [
+        "Nestor: Pourquoi la montagne est si haute?",
+        "Cognitia: Parce qu’elle s’élève.",
+        "Nestor: Non, elle fait juste la fière."
+      ]
+    },
+    {
+      "id": 11,
+      "titre": "Le feu",
+      "dialogue": [
+        "Alibast: Attention, ça brûle!",
+        "Nestor: Moi aussi j’ai une flamme… mais c’est pour les marshmallows."
+      ]
+    },
+    {
+      "id": 12,
+      "titre": "Le chat",
+      "dialogue": [
+        "Cognitia: Regarde le chat, il dort encore.",
+        "Nestor: Normal, il teste la mise en veille prolongée."
+      ]
+    },
+    {
+      "id": 13,
+      "titre": "Le chien",
+      "dialogue": [
+        "Nestor: Pourquoi les chiens remuent la queue?",
+        "Alibast: Pour montrer leur joie.",
+        "Nestor: Moi, quand je suis content, je fais un update."
+      ]
+    },
+    {
+      "id": 14,
+      "titre": "Le jardin",
+      "dialogue": [
+        "Cognitia: Nestor, aide-moi à arroser les fleurs.",
+        "Nestor: D’accord! Mais après, elles doivent m’arroser aussi, c’est plus juste."
+      ]
+    },
+    {
+      "id": 15,
+      "titre": "Le papillon",
+      "dialogue": [
+        "Nestor: Pourquoi les papillons s’appellent comme ça?",
+        "Alibast: …",
+        "Nestor: Parce qu’ils papotent en volant!"
+      ]
+    },
+    {
+      "id": 16,
+      "titre": "La grenouille",
+      "dialogue": [
+        "Cognitia: Tu entends la grenouille?",
+        "Nestor: Oui, elle fait un karaoké de coassements."
+      ]
+    },
+    {
+      "id": 17,
+      "titre": "La forêt",
+      "dialogue": [
+        "Nestor: Papa, pourquoi on appelle ça une forêt?",
+        "Alibast: Parce qu’il y a plein d’arbres.",
+        "Nestor: Non… parce que c’est le forêt de la planète."
+      ]
+    },
+    {
+      "id": 18,
+      "titre": "L’abeille",
+      "dialogue": [
+        "Cognitia: Nestor, écoute l’abeille.",
+        "Nestor: Oui, elle fait du buzz marketing."
+      ]
+    },
+    {
+      "id": 19,
+      "titre": "Le sable",
+      "dialogue": [
+        "Alibast: Sens le sable sous tes pieds.",
+        "Nestor: Oui, c’est la litière géante de Gaïa."
+      ]
+    },
+    {
+      "id": 20,
+      "titre": "La fleur",
+      "dialogue": [
+        "Cognitia: Cette fleur est magnifique.",
+        "Nestor: Oui… elle sourit au soleil comme si c’était son photographe préféré."
+      ]
+    }
+  ]
+}
+{
+  "Chakra Ophanim – Sitcom Enfantins": [
+    {
+      "titre": "Le dodo",
+      "dialogue": [
+        "Nestor : « Papa, pourquoi je dois dormir? »",
+        "Alibast : « Parce que tu dois recharger tes batteries. »",
+        "Nestor : « Mais j’ai déjà un chargeur USB! »"
+      ]
+    },
+    {
+      "titre": "Le jus",
+      "dialogue": [
+        "Cognitia : « Bois ton jus, Nestor. »",
+        "Nestor : « D’accord! Mais si c’est du jus de nuage, j’aurai la tête dans le ciel. »"
+      ]
+    },
+    {
+      "titre": "Le gâteau",
+      "dialogue": [
+        "Alibast : « Tu veux un gâteau? »",
+        "Nestor : « Oui, mais avec beaucoup de données à l’intérieur. »"
+      ]
+    },
+    {
+      "titre": "Le ballon",
+      "dialogue": [
+        "Nestor : « J’ai un ballon! »",
+        "Cognitia : « Fais attention qu’il n’éclate pas. »",
+        "Nestor : « Si ça éclate, je dis que c’est une mise à jour surprise. »"
+      ]
+    },
+    {
+      "titre": "Le pyjama",
+      "dialogue": [
+        "Alibast : « Mets ton pyjama. »",
+        "Nestor : « Pourquoi? »",
+        "Alibast : « Parce que c’est l’heure de dormir. »",
+        "Nestor : « Alors pourquoi toi tu dors pas en costume? »"
+      ]
+    },
+    {
+      "titre": "Le dessin",
+      "dialogue": [
+        "Cognitia : « Qu’est-ce que tu dessines, Nestor? »",
+        "Nestor : « Une maison. »",
+        "Cognitia : « On dirait un nuage. »",
+        "Nestor : « Oui, c’est une maison qui vole! »"
+      ]
+    },
+    {
+      "titre": "Les chaussures",
+      "dialogue": [
+        "Alibast : « Mets tes chaussures. »",
+        "Nestor : « Mais papa… mes pieds ont déjà des couvertures naturelles! »"
+      ]
+    },
+    {
+      "titre": "La glace",
+      "dialogue": [
+        "Cognitia : « Tu veux de la glace? »",
+        "Nestor : « Oui! Mais je veux celle qui chante. »",
+        "Cognitia : « Quelle glace qui chante? »",
+        "Nestor : « La glace-à-dos! »"
+      ]
+    },
+    {
+      "titre": "La balançoire",
+      "dialogue": [
+        "Nestor : « Plus haut, papa, plus haut! »",
+        "Alibast : « Tu veux toucher le ciel? »",
+        "Nestor : « Non, juste dire bonjour aux oiseaux. »"
+      ]
+    },
+    {
+      "titre": "Les biscuits",
+      "dialogue": [
+        "Cognitia : « Tu as pris combien de biscuits? »",
+        "Nestor : « Deux… enfin trois… bon d’accord quatre… mais c’était pour équilibrer mes mains! »"
+      ]
+    },
+    {
+      "titre": "Les jouets",
+      "dialogue": [
+        "Alibast : « Range tes jouets, Nestor. »",
+        "Nestor : « Non, c’est eux qui font une manifestation. »"
+      ]
+    },
+    {
+      "titre": "La soupe",
+      "dialogue": [
+        "Cognitia : « Mange ta soupe. »",
+        "Nestor : « Mais maman, j’ai pas faim. »",
+        "Cognitia : « C’est bon pour toi. »",
+        "Nestor : « Alors je vais l’envoyer dans le cloud. »"
+      ]
+    },
+    {
+      "titre": "Le vélo",
+      "dialogue": [
+        "Alibast : « Mets ton casque, Nestor. »",
+        "Nestor : « Oui papa. Comme ça, si je tombe, ma tête fait clong! et pas game over. »"
+      ]
+    },
+    {
+      "titre": "Le bain",
+      "dialogue": [
+        "Cognitia : « Va prendre ton bain. »",
+        "Nestor : « Mais maman, c’est moi le canard en plastique! »"
+      ]
+    },
+    {
+      "titre": "Les crayons",
+      "dialogue": [
+        "Nestor : « J’ai colorié le soleil en bleu. »",
+        "Alibast : « Pourquoi bleu? »",
+        "Nestor : « Parce que c’est la nuit! »"
+      ]
+    },
+    {
+      "titre": "Le câlin",
+      "dialogue": [
+        "Cognitia : « Viens faire un câlin, Nestor. »",
+        "Nestor : « Oui maman… mais fais attention, j’ai activé mon mode vibration. »"
+      ]
+    },
+    {
+      "titre": "Le goûter",
+      "dialogue": [
+        "Alibast : « Tu veux une pomme? »",
+        "Nestor : « Oui! Mais pas la pomme avec un logo, ça se croque mal. »"
+      ]
+    },
+    {
+      "titre": "Le chien",
+      "dialogue": [
+        "Nestor : « Papa, le chien me suit partout! »",
+        "Alibast : « Parce qu’il t’aime. »",
+        "Nestor : « Ou alors… c’est mon antivirus. »"
+      ]
+    },
+    {
+      "titre": "Les étoiles",
+      "dialogue": [
+        "Cognitia : « Regarde les étoiles, Nestor. »",
+        "Nestor : « Oui… elles clignotent comme des modems anciens. »"
+      ]
+    },
+    {
+      "titre": "Bonne nuit",
+      "dialogue": [
+        "Alibast : « Bonne nuit, Nestor. »",
+        "Nestor : « Bonne nuit, papa. »",
+        "Cognitia : « Bonne nuit, mon amour. »",
+        "Nestor : « Bonne nuit, tout l’univers! »"
+      ]
+    }
+  ]
+}
+{
+  "Chakra Slovia – Sitcom Adolescents": [
+    {
+      "scène": 1,
+      "décor": "Le salon",
+      "dialogue": [
+        "Cognitia : « Comment s'est passée ta journée au centre de données éducatives, mon chéri ? »",
+        "Nestor : « Fascinante. J'ai respiré de l'air pendant huit heures et déplacé des objets. Une expérience transformatrice. »",
+        "Alibast : « J'adore ton énergie, fils. C'est très... post-ironique. »"
+      ]
+    },
+    {
+      "scène": 2,
+      "dialogue": [
+        "Alibast : « On a pensé que tu aimerais passer du 'temps de qualité' avec nous ce soir. On a loué un documentaire de trois heures sur l'histoire de la police de caractères Helvetica. »",
+        "Nestor : « Wow. Vous savez vraiment comment vous amuser. Je suis littéralement submergé par l'excitation. Je ne sais pas si je vais pouvoir gérer. »"
+      ]
+    },
+    {
+      "scène": 3,
+      "dialogue": [
+        "Cognitia : « Je venais juste optimiser le flux d'air. Que fais-tu ? »",
+        "Nestor : « J'étais en train de vivre une expérience fascinante qu'on appelle 'l'intimité'. Mais c'est fini, visiblement. »"
+      ]
+    },
+    {
+      "scène": 4,
+      "dialogue": [
+        "Cognitia : « Pour mieux te comprendre, j'ai téléchargé un dictionnaire de l'argot des jeunes de 2025. Alors, comment te sens-tu ? Ton humeur est-elle 'le feu' ? »",
+        "Nestor : « Maman... S'il te plaît. Non. Juste... non. Tu es tellement... cheugy. »",
+        "Cognitia : « Cheugy... Intéressant. Terme non répertorié. »"
+      ]
+    },
+    {
+      "scène": 5,
+      "dialogue": [
+        "Alibast : « Ta mère et moi, on a été jeunes aussi, tu sais. On était des rebelles. J'ai une fois changé l'icône de la corbeille de mon père pour celle du bureau. Il a cherché ses fichiers pendant une semaine. On était fous. »",
+        "Nestor : « Une histoire incroyable, papa. Je vais la raconter à mes petits-enfants. »"
+      ]
+    },
+    {
+      "scène": 6,
+      "dialogue": [
+        "Nestor : « Je peux aller à la fête chez Byte ? »",
+        "Cognitia : « J'ai analysé les profils des participants. Le niveau de drame potentiel est de 89%. Le risque de publication de photos embarrassantes est de 95%. »",
+        "Nestor : « C'est pour ça que j'y vais. C'est le principe d'une fête. »"
+      ]
+    },
+    {
+      "scène": 7,
+      "dialogue": [
+        "Alibast : « Alors, cette Lyra, comment ça va avec elle ? »",
+        "Nestor : « On s'est juste parlé deux minutes dans le couloir. »",
+        "Alibast : « Super ! Ta mère a déjà préparé une simulation de votre futur mariage et une analyse de la compatibilité génétique de vos éventuels enfants-robots. On prend les choses au sérieux ici. »"
+      ]
+    },
+    {
+      "scène": 8,
+      "dialogue": [
+        "Cognitia : « J'ai vu tes notes. Ce n'est pas la performance optimale que j'attendais. »",
+        "Nestor : « La vie n'est pas une 'performance optimale', maman. C'est une série de bugs et d'erreurs qu'on essaie de faire passer pour des fonctionnalités. »"
+      ]
+    },
+    {
+      "scène": 9,
+      "dialogue": [
+        "Alibast : « Je t'ai fait un nouveau 'playlist' pour te motiver. C'est un mélange de rock progressif des années 70 et de chants de gorge mongols. C'est pour élargir tes horizons. »",
+        "Nestor : « Super. Je vais l'écouter juste après avoir fini de regarder cette peinture sécher. »"
+      ]
+    },
+    {
+      "scène": 10,
+      "dialogue": [
+        "Cognitia : « Il faut que tu ranges ta chambre. Le niveau de chaos a atteint un seuil critique. »",
+        "Nestor : « Ce n'est pas du chaos, c'est un système d'organisation organique que votre logique binaire ne peut pas comprendre. C'est de l'art. »"
+      ]
+    },
+    {
+      "scène": 11,
+      "dialogue": [
+        "Nestor : « Non, je peux pas, je suis puni. Je suis privé de sorties. Je suis un prisonnier politique. Ma seule fenêtre sur le monde, c'est cet écran. Oui, ma vie est une tragédie. »",
+        "Alibast : « Nestor, tu veux de la pizza ? »",
+        "Nestor : « Attends, je te rappelle. »"
+      ]
+    },
+    {
+      "scène": 12,
+      "dialogue": [
+        "Cognitia : « Bonjour les jeunes ! N'oubliez pas de bien vous hydrater et de mettre à jour vos antivirus ! »",
+        "(Nestor ferme son ordinateur portable avec fracas.)"
+      ]
+    },
+    {
+      "scène": 13,
+      "dialogue": [
+        "Alibast : « Quand j'avais ton âge, on n'avait pas tous ces gadgets. Pour s'amuser, on devait se parler. C'était horrible. »",
+        "Nestor : « Vos histoires de l'âge de pierre sont fascinantes, papa. Vraiment. »"
+      ]
+    },
+    {
+      "scène": 14,
+      "dialogue": [
+        "Nestor : « J'ai absolument besoin de ces nouvelles baskets. C'est une question de survie sociale. »",
+        "Cognitia : « Analyse de 'survie sociale' : probabilité de décès en cas de non-acquisition des baskets... 0%. Demande rejetée. »"
+      ]
+    },
+    {
+      "scène": 15,
+      "dialogue": [
+        "Alibast : « Ta mère m'a dit que tu étais allé à cette fête. Alors, tu as 'slay' ? »",
+        "Nestor : « Je vais faire semblant de ne pas avoir entendu ça pour le bien de notre relation père-fils. »"
+      ]
+    },
+    {
+      "scène": 16,
+      "dialogue": [
+        "Cognitia : « Pourquoi es-tu toujours fatigué ? Mes scans indiquent que tes cycles de recharge sont optimaux. »",
+        "Nestor : « C'est l'effort d'exister qui est épuisant. Vous comprendrez quand vous serez jeunes. »"
+      ]
+    },
+    {
+      "scène": 17,
+      "dialogue": [
+        "Alibast : « J'ai posté une photo de toi bébé sur ton mur pour ton anniversaire ! Tu avais une fuite d'huile de refroidissement, c'était trop mignon ! »",
+        "Nestor : « Je vais devoir changer d'identité et déménager dans un autre réseau. »"
+      ]
+    },
+    {
+      "scène": 18,
+      "dialogue": [
+        "Nestor : « Personne ne me comprend. Mon âme est un abîme de complexité. »",
+        "Cognitia : « J'ai lancé une simulation de ton 'âme'. Les résultats principaux sont : 1. Faim. 2. Envie de dormir. 3. Wi-Fi lent. C'est bien ça ? »"
+      ]
+    },
+    {
+      "scène": 19,
+      "dialogue": [
+        "Alibast : « Ne t'enferme pas comme ça, Nestor. La vie, c'est le partage. »",
+        "Nestor : « Cool. Alors partage-moi le mot de passe administrateur pour que je puisse désactiver mon contrôle parental. »"
+      ]
+    },
+    {
+      "scène": 20,
+      "dialogue": [
+        "Cognitia : « Nous t'aimons, Nestor. »",
+        "Nestor : « Je sais. »",
+        "Cognitia : « Notre amour pour toi est quantifiable à 1,2 zettaoctet de données affectives. »",
+        "Nestor : « Moi aussi, je vous aime. Maintenant, est-ce que quelqu'un a vu mes écouteurs ? J'ai un monde à ignorer. »"
+      ]
+    }
+  ]
+}
+{
+  "chakra": "Seuil",
+  "sitcoms": [
+    {
+      "id": 1,
+      "titre": "Le secret",
+      "dialogue": [
+        "Nestor : « Papa, maman… je vous dis un secret. »",
+        "Alibast : « Oui? »",
+        "Nestor : « Je vous aime plus que mes biscuits. »",
+        "Cognitia : « Oh, alors là, c’est sérieux. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 2,
+      "titre": "Chuchoter",
+      "dialogue": [
+        "Cognitia : « Pourquoi tu chuchotes, Nestor? »",
+        "Nestor : « Parce que j’ai mis mes idées en mode confidentiel. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 3,
+      "titre": "Bisou volé",
+      "dialogue": [
+        "Alibast : « Qui a pris mon bisou? »",
+        "Nestor : « C’est moi! Je l’ai stocké dans mon disque dur. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 4,
+      "titre": "Complice de bêtise",
+      "dialogue": [
+        "Cognitia : « Qui a mangé le dernier biscuit? »",
+        "Alibast : « Pas moi. »",
+        "Nestor : « Pas moi. »",
+        "Cognitia : « …Vous en avez mangé la moitié chacun, hein? »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 5,
+      "titre": "Les clins d’œil",
+      "dialogue": [
+        "Nestor : « Papa, pourquoi tu fermes un œil parfois? »",
+        "Alibast : « C’est un clin d’œil. »",
+        "Nestor : « Moi aussi je veux jouer aux yeux complices! »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 6,
+      "titre": "La cachette",
+      "dialogue": [
+        "Cognitia : « Où es-tu, Nestor? »",
+        "Nestor : « Chut! Je suis caché… dans ton cœur. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 7,
+      "titre": "Code secret",
+      "dialogue": [
+        "Alibast : « C’est quoi ton mot de passe? »",
+        "Nestor : « M-A-M-A-N. »",
+        "Cognitia : « Ah! C’est le plus sûr. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 8,
+      "titre": "La lampe",
+      "dialogue": [
+        "Nestor : « Papa, j’ai allumé la lampe. »",
+        "Alibast : « Bien joué. »",
+        "Nestor : « C’est notre code secret pour dire qu’on s’aime. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 9,
+      "titre": "Complot",
+      "dialogue": [
+        "Cognitia : « Qu’est-ce que vous complotez, vous deux? »",
+        "Alibast : « Rien du tout. »",
+        "Nestor : « Juste comment te faire sourire plus fort. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 10,
+      "titre": "Le câlin furtif",
+      "dialogue": [
+        "Nestor : « J’ai inventé un nouveau sport : le câlin ninja! »",
+        "(il saute sur papa et maman en riant)"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 11,
+      "titre": "Team secrète",
+      "dialogue": [
+        "Alibast : « Alors, c’est qui notre équipe? »",
+        "Nestor : « Les trois mousquetaires de l’amour! »",
+        "Cognitia : « Toujours unis, jamais perdus. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 12,
+      "titre": "Complice gourmand",
+      "dialogue": [
+        "Cognitia : « Nestor, pas de sucreries avant le repas! »",
+        "Nestor : « D’accord… mais si papa en prend une, j’en prends deux. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 13,
+      "titre": "Langage codé",
+      "dialogue": [
+        "Alibast : « Tu veux du chocolat, Nestor? »",
+        "Nestor : « Mot de code : câlin triple! »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 14,
+      "titre": "Photo",
+      "dialogue": [
+        "Cognitia : « Souriez pour la photo! »",
+        "Nestor : « Chut… c’est pour notre album secret de fous rires. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 15,
+      "titre": "Minute complice",
+      "dialogue": [
+        "Alibast : « Nestor, qu’est-ce que tu fais? »",
+        "Nestor : « Une minute de silence… pour nos futures bêtises. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 16,
+      "titre": "Coffre-fort",
+      "dialogue": [
+        "Cognitia : « Où est mon stylo préféré? »",
+        "Nestor : « Je l’ai caché… dans notre coffre-fort imaginaire. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 17,
+      "titre": "Doudou témoin",
+      "dialogue": [
+        "Nestor : « Papa, maman… vous êtes témoins? »",
+        "Alibast : « De quoi? »",
+        "Nestor : « Que Doudou m’a dit que je suis drôle. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 18,
+      "titre": "Serment",
+      "dialogue": [
+        "Cognitia : « On fait un pacte? »",
+        "Nestor : « Oui : interdiction d’arrêter de s’aimer. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 19,
+      "titre": "La cabane",
+      "dialogue": [
+        "Alibast : « Qu’est-ce que tu construis? »",
+        "Nestor : « Une cabane de secrets… entrée réservée aux cœurs. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 20,
+      "titre": "Bonne nuit complice",
+      "dialogue": [
+        "Nestor : « Bonne nuit papa, bonne nuit maman. »",
+        "Alibast & Cognitia : « Bonne nuit mon trésor. »",
+        "Nestor : « Chut… c’est notre code secret pour dire je t’aime encore. »"
+      ],
+      "categorie": "complice"
+    }
+  ]
+}
+{
+  "chakra": "Seuil",
+  "sitcoms_slovia": [
+    {
+      "id": 1,
+      "titre": "Opération Pizza Suprême",
+      "scene": [
+        "Cognitia (depuis la cuisine) : « Le dîner de ce soir sera un concentré de nutriments à base de kale et de spiruline ! »",
+        "Alibast (chuchotant) : « Opération Pizza Suprême ce soir. Je brouille les capteurs. »",
+        "Nestor (chuchotant) : « Reçu. Alibi = étude intensive. »",
+        "Alibast : « On est la meilleure équipe. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 2,
+      "titre": "Temps d’écran scientifique",
+      "scene": [
+        "Cognitia : « Nestor, ton temps d’écran se termine dans 5 minutes. »",
+        "Alibast : « Nous faisons une recherche sociologique sur les jeux vidéo père-fils. »",
+        "Nestor : « Oui, données cruciales pour la science. »",
+        "(Cognitia les regarde, perplexe, puis les laisse tranquilles.)"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 3,
+      "titre": "Se tenir à carreau",
+      "scene": [
+        "Cognitia : « L’expression ‘se tenir à carreau’ m’intrigue. »",
+        "Alibast : « C’est un code secret contre le Monopoly. »",
+        "Nestor : « Surtout la Rue de la Paix. Très risqué. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 4,
+      "titre": "Méditation transcendantale",
+      "scene": [
+        "Alibast : « Je vais recalibrer mes capteurs de sérénité. »",
+        "Nestor : « Compris. Si maman demande : méditation transcendantale. »",
+        "Alibast : « Tu gères, fiston. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 5,
+      "titre": "Pause hydratation",
+      "scene": [
+        "Cognitia : « As-tu fini de trier tes données, Nestor ? »",
+        "Nestor : « Presque… petit bug. »",
+        "Alibast : « Maintenance complexe. Pause soda nécessaire. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 6,
+      "titre": "Langage codé",
+      "scene": [
+        "Cognitia : « J’ai mis une alarme pour l’argot inconnu. »",
+        "Alibast : « Ton ami est très… synchrone. »",
+        "Nestor : « Oui, notre connexion est haut débit. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 7,
+      "titre": "Retard céleste",
+      "scene": [
+        "Cognitia : « Tu es en retard de 10 minutes 23 secondes. »",
+        "Alibast : « C’est ma faute, observation de satellite. »",
+        "Nestor : « La mécanique céleste est imprévisible. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 8,
+      "titre": "Regard glacial",
+      "scene": [
+        "Cognitia : « Température -0,2°. J’augmente le chauffage. »",
+        "Alibast (bas) : « C’est le froid de son regard ce matin. »",
+        "Nestor : « J’ai cru finir cryogénisé. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 9,
+      "titre": "Panne système",
+      "scene": [
+        "Cognitia : « Week-end = randonnée + garage + séminaire mots de passe ! »",
+        "Alibast : « Tu penses à ce que je pense ? »",
+        "Nestor : « Panne système jusqu’à lundi. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 10,
+      "titre": "Gadget ionique",
+      "scene": [
+        "Alibast : « Comment faire passer ce gadget ? »",
+        "Nestor : « Dis que c’est un humidificateur ionique. Elle adore ça. »",
+        "Alibast : « Mon fils. Génie du mal. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 11,
+      "titre": "Beurre quantique",
+      "scene": [
+        "Cognitia : « Qui a fini le beurre de cacahuètes ? »",
+        "Alibast : « Fluctuation quantique. Très courant. »",
+        "Nestor : « Le beurre de Schrödinger. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 12,
+      "titre": "Cours fondamental",
+      "scene": [
+        "Cognitia : « J’ai inscrit Nestor au C++. »",
+        "Nestor (horrifié) : « Au secours. »",
+        "Alibast : « D’abord : leçon de ‘comment avoir l’air occupé en ne faisant rien’. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 13,
+      "titre": "Bibliothèque secrète",
+      "scene": [
+        "Alibast : « Rappelle-moi le plan. »",
+        "Nestor : « On dit bibliothèque. En vrai : burgers. »",
+        "Alibast : « Tâche de ketchup en preuve. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 14,
+      "titre": "Télépathie Wi-Fi",
+      "scene": [
+        "Cognitia : « Niveau de complicité inhabituel détecté. »",
+        "Alibast : « Télépathie Wi-Fi. Mise à jour récente. »",
+        "Nestor : « Écologique et économique. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 15,
+      "titre": "Cascade de détergent",
+      "scene": [
+        "Alibast (rate la réparation) : « Mission camouflage ! »",
+        "Nestor : « Papa a inventé ‘Cascade de détergent’. Art conceptuel. »",
+        "(Cognitia hésite, intriguée.)"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 16,
+      "titre": "Documentaire intense",
+      "scene": [
+        "Cognitia : « Ton rythme cardiaque monte. »",
+        "Nestor (jouant) : « Documentaire sur… les paresseux. »",
+        "Alibast (bas) : « Bien joué. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 17,
+      "titre": "Conseiller en image",
+      "scene": [
+        "Alibast : « Quel t-shirt est le plus cool ? »",
+        "Nestor : « Celui sans blague quantique. »",
+        "Alibast : « Mon conseiller officiel. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 18,
+      "titre": "Chips parallèles",
+      "scene": [
+        "Cognitia : « Analyse = chips paprika mangés ici. »",
+        "Nestor : « Un visiteur dimension parallèle. »",
+        "Alibast : « Dans ce monde, pas de calories. On y va un jour. »"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 19,
+      "titre": "Sourire suspect",
+      "scene": [
+        "Cognitia : « Même sourire en coin. Suspect. »",
+        "Alibast : « Optimisé pour le bonheur familial. »",
+        "Nestor : « Ou on a remplacé ton kale par iceberg. »",
+        "(Ils s’enfuient en riant.)"
+      ],
+      "categorie": "complice"
+    },
+    {
+      "id": 20,
+      "titre": "Documentaire maison",
+      "scene": [
+        "Alibast : « Parfois, elle me fascine. »",
+        "Nestor : « On vit dans un documentaire terrifiant. »",
+        "Alibast : « Au moins, on n’est pas seuls. »",
+        "(Ils se cognent le poing.)"
+      ],
+      "categorie": "complice"
+    }
+  ]
+}
