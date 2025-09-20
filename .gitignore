@@ -61,3 +61,27 @@ node_modules/
 dist/
 build/
 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs / données locales
+logs/
+data/
+*.log
+
+# Médias/binaires lourds
+videos/
+*.mp4
+*.mov
+*.avi
+*.exe
